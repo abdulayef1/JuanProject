@@ -1,0 +1,48 @@
+﻿@model IEnumerable<SlideItems>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<section class="section">
+	<div class="section-body">
+		<div class="row mt-5">
+			<div class="col-12 col-md-6 col-lg-6">
+				<div class="card">
+					<div class="card-header">
+						<h4>Slide Items</h4>
+					</div>
+					<div class="card-body">
+					<div>
+						<a asp-controller="SlideItem" asp-action="Creat"  type="button" class="btn btn-action btn-secondary"> <i class="ion-ios-upload-outline"></i> Creat</a>
+					</div>
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<tr>
+									<th>Image</th>
+									<th>Tittle</th>
+									<th>Subtittle</th>
+									<th>Actions</th>
+								</tr>
+								@foreach (var item in Model)
+								{
+								<tr>
+									<td><img src="~/assets/img/slider/@item.Image" alt="Girl in a jacket" style="width:200px;height:auto;"></td>
+									<td>@item.Tittle</td>
+									<td>@item.SubTittle</td>
+									<td>
+										<a   asp-controller="SlideItem"  asp-action="Detail" asp-route-id="@item.Id" class="btn btn-action btn-warning"> <i class="ion ion-ios-information-outline"></i> Detail</a>
+										<a asp-controller="SlideItem" asp-action="Update" asp-route-id="@item.Id" class="btn btn-action btn-primary"> <i class="ion-android-create"></i>  Update</a>
+										<a	 asp-controller="SlideItem" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-action btn-danger @(ViewBag.Count==1?"disabled":"")"> <i class="ion-android-delete"></i> Delete</a>
+									</td>
+								</tr>
+								}
+
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,42 @@
+﻿@model SlideItems
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="row">
+    <div class="col-12 col-sm-6 col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <div class="float-right">
+                    <a data-collapse="#mycard-collapse" class="btn btn-icon"><i class="ion ion-minus"></i></a>
+                </div>
+                <h4>Show/Hide</h4>
+            </div>
+                <form method="post">
+            <div class="collapse show" id="mycard-collapse">
+
+                <div class="card-body">
+                    <h2>
+                    @Model.Tittle
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <h4>
+                   @Model.SubTittle
+                    </h4>
+                </div>
+                <div class="card-body">
+                   @Model.Description
+                </div>
+                <div class="card-body">
+                    <img src="~/assets/img/slider/@Model.Image" alt="Girl in a jacket" style="width:600px;height:auto;">
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-action btn-danger"> <i class="ion-android-delete"> Delete</i></button>
+                    <a asp-controller="SlideItem" asp-action="Index" class="btn btn-action btn-info"> <i class="ion-ios-list-outline">  BACK</i></a>
+                </div>
+            </div>
+                </form>
+        </div>
+    </div>
+</div>

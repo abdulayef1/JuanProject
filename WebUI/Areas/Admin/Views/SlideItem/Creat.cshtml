@@ -1,0 +1,69 @@
+﻿@using WebUI.Areas.Admin.ViewModels
+@model SlideItemVM
+@{
+	ViewData["Title"] = "Creat";
+}
+
+<div id="app">
+	<section class="section">
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+					<div class="login-brand">
+						Create new slide item
+					</div>
+
+					<div class="card card-primary">
+						<div class="card-header"><h3>Create</h3></div>
+
+						<div class="card-body">
+							<form method="post" enctype="multipart/form-data">
+								<div class="form-group">
+									<label for="Tittle">Tittle</label>
+									<input asp-for="Tittle" class="form-control" >
+									<span asp-validation-for="Tittle" class="text-danger"></span>
+									<div class="invalid-feedback">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label >Subtittle</label>
+									<input asp-for="SubTittle" class="form-control" >
+									<span asp-validation-for="SubTittle" class="text-danger"></span>
+									<div class="invalid-feedback">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label >Description</label>
+									<input asp-for="Description" class="form-control" >
+									<span asp-validation-for="Description" class="text-danger"></span>
+									<div class="invalid-feedback">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label >Image</label>
+									<input asp-for="Image" class="form-control" accept="image/*">
+									<span asp-validation-for="Image" class="text-danger"></span>
+									<div class="invalid-feedback">
+									</div>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary btn-block">
+										Create
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="simple-footer">
+						Copyright &copy; Mhmmd 2023
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
