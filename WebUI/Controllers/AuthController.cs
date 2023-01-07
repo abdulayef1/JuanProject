@@ -76,18 +76,18 @@ public class AuthController : Controller
 
         var loginRes = await _signInManager.PasswordSignInAsync(user, loginViewModel.Password, loginViewModel.RememberMe, true);
 
-        if (!loginRes.Succeeded)
-        {
-            ModelState.AddModelError("", "Invalid login");
-            return View(loginViewModel);
-        }
-
         if (loginRes.IsLockedOut)
         {
             ModelState.AddModelError("", "Try again few moments later");
             return View(loginViewModel);
         }
 
+
+        if (!loginRes.Succeeded)
+        {
+            ModelState.AddModelError("", "Invalid login");
+            return View(loginViewModel);
+        }
         if (!user.IsActive)
         {
             ModelState.AddModelError("", "Acount is not active");
