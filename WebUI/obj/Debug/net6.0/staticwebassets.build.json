@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nKD9N793ynvGJfLSnS3IVSraXBJ/xtgozEEdNRswmws=",
+  "Hash": "Lo7MLANOEej3LIrewC4Z5C4g6KvwGloqsBT4W0PAwDA=",
   "Source": "WebUI",
   "BasePath": "_content/WebUI",
   "Mode": "Default",
@@ -53941,12 +53941,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\product\\pro-small-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\JuanProject\\WebUI\\wwwroot\\assets\\img\\slider\\d1c20d91-ba9c-4919-b23f-36d2fcd3daeaslider-2.jpg",
+      "Identity": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\JuanProject\\WebUI\\wwwroot\\assets\\img\\slider\\5f0db04e-772f-400a-985f-9668ac53264fslider-2.jpg",
       "SourceId": "WebUI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\JuanProject\\WebUI\\wwwroot\\",
       "BasePath": "_content/WebUI",
-      "RelativePath": "assets/img/slider/d1c20d91-ba9c-4919-b23f-36d2fcd3daeaslider-2.jpg",
+      "RelativePath": "assets/img/slider/5f0db04e-772f-400a-985f-9668ac53264fslider-2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -53955,7 +53955,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\slider\\d1c20d91-ba9c-4919-b23f-36d2fcd3daeaslider-2.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\slider\\5f0db04e-772f-400a-985f-9668ac53264fslider-2.jpg"
     },
     {
       "Identity": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\JuanProject\\WebUI\\wwwroot\\assets\\img\\slider\\slider-1.jpg",

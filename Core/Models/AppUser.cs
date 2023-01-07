@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Identity;
 
-namespace Core.Models
+namespace Core.Models;
+
+public class AppUser: IdentityUser
 {
-	internal class AppUser
-	{
-	}
+    public string? Fullname { get; set; }
+    public bool IsActive { get; set; }
 }

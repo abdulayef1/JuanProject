@@ -1,5 +1,6 @@
 ﻿using Core.Models;
 using DataAccess.Contexts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using NuGet.ContentModel;
@@ -11,6 +12,7 @@ using static NuGet.Packaging.PackagingConstants;
 namespace WebUI.Areas.Admin.Controllers;
 
 [Area("Admin")]
+[Authorize]
 public class SlideItemController : Controller
 {
     private readonly AppDbContext _context;

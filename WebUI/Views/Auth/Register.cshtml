@@ -1,0 +1,58 @@
+﻿@using WebUI.ViewModels.AuthViewModels
+@model RegisterViewModel
+@{
+	ViewData["Title"] = "Register";
+}
+
+<div class="login-register-wrapper section-padding">
+	<div class="container">
+		<div class="align-content-center">
+			<!-- Register Content Start -->
+			<div class="col-lg-6">
+				<div class="login-reg-form-wrap signup-form">
+					<h2>Sign up</h2>
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<form  method="post">
+						<div class="single-input-item">
+							<input asp-for="Fullname" type="text" placeholder="Full Name" />
+						</div>
+						<span asp-validation-for="Fullname" class="text-danger"></span>
+						<div class="single-input-item">
+							<input asp-for="Username" type="text" placeholder="UserName" />
+						</div>
+						<span asp-validation-for="Username" class="text-danger"></span>
+						<div class="single-input-item">
+							<input asp-for="Email" type="email" placeholder="Enter your Email" />
+						</div>
+						<span asp-validation-for="Email" class="text-danger"></span>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="single-input-item">
+									<input asp-for="Password" type="password" placeholder="Enter your Password" />
+								</div>
+								<span asp-validation-for="Password" class="text-danger"></span>
+							</div>
+							<div class="col-lg-6">
+								<div class="single-input-item">
+									<input asp-for="ConfirmPassword" type="password" placeholder="Repeat your Password" />
+								</div>
+								<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="single-input-item">
+							<div class="login-reg-form-meta">
+								<div class="remember-meta">
+								</div>
+							</div>
+						</div>
+						<div class="single-input-item">
+							<button type="submit" class="btn">Register</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Register Content End -->
+		</div>
+	</div>
+</div>
+
